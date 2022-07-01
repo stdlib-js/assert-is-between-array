@@ -24,32 +24,30 @@ limitations under the License.
 
 > Test if a value is an array-like object where every element is between two values.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-between-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isBetweenArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@umd/browser.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isBetweenArray;
-})();
-</script>
+var isBetweenArray = require( '@stdlib/assert-is-between-array' );
 ```
 
 #### isBetweenArray( value, a, b\[, left, right] )
@@ -144,15 +142,10 @@ bool = isBetweenArray( arr, 3, 5, 'closed', 'open' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/index.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@umd/index.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@umd/index.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var filledarrayBy = require( '@stdlib/array-filled-by' );
+var isBetweenArray = require( '@stdlib/assert-is-between-array' );
 
 // Create an array of random numbers:
 var x = filledarrayBy( 100, 'float64', randu );
@@ -160,11 +153,6 @@ var x = filledarrayBy( 100, 'float64', randu );
 // Check whether every element resides within the interval [0.01, 0.99]:
 var bool = isBetweenArray( x, 0.01, 0.99 );
 console.log( bool );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -256,7 +244,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-between]: https://github.com/stdlib-js/assert-is-between/tree/umd
+[@stdlib/assert/is-between]: https://github.com/stdlib-js/assert-is-between
 
 <!-- </related-links> -->
 
