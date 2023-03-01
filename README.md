@@ -167,7 +167,7 @@ console.log( bool );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/is-between`][@stdlib/assert/is-between]</span><span class="delimiter">: </span><span class="description">test if a value is between two values.</span>
+-   <span class="package-name">[`@stdlib/assert-is-between`][@stdlib/assert/is-between]</span><span class="delimiter">: </span><span class="description">test if a value is between two values.</span>
 
 </section>
 
