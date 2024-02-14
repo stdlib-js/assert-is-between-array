@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@esm/index.mjs';
+import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@v0.2.0-esm/index.mjs';
 ```
 
 #### isBetweenArray( value, a, b\[, left, right] )
@@ -145,7 +145,7 @@ bool = isBetweenArray( arr, 3, 5, 'closed', 'open' );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
-import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@esm/index.mjs';
+import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@v0.2.0-esm/index.mjs';
 
 // Create an array of random numbers:
 var x = filledarrayBy( 100, 'float64', randu );
