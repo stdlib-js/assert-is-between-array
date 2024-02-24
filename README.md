@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@deno/mod.js';
+import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@v0.2.1-deno/mod.js';
 ```
 
 #### isBetweenArray( value, a, b\[, left, right] )
@@ -140,7 +140,7 @@ bool = isBetweenArray( arr, 3, 5, 'closed', 'open' );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
-import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@deno/mod.js';
+import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@v0.2.1-deno/mod.js';
 
 // Create an array of random numbers:
 var x = filledarrayBy( 100, 'float64', randu );
