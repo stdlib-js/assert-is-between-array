@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+isBetweenArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-between-array/tags). For example,
+
+```javascript
 isBetweenArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@v0.2.2-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var isBetweenArray = require( 'path/to/vendor/umd/assert-is-between-array/index.
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@v0.2.2-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -167,7 +172,7 @@ bool = isBetweenArray( arr, 3, 5, 'closed', 'open' );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@v0.2.2-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
