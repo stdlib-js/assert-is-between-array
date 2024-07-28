@@ -35,32 +35,14 @@ limitations under the License.
 
 > Test if a value is an array-like object where every element is between two values.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-between-array
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var isBetweenArray = require( '@stdlib/assert-is-between-array' );
+import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@esm/index.mjs';
 ```
 
 #### isBetweenArray( value, a, b\[, left, right] )
@@ -155,10 +137,15 @@ bool = isBetweenArray( arr, 3, 5, 'closed', 'open' );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var filledarrayBy = require( '@stdlib/array-filled-by' );
-var isBetweenArray = require( '@stdlib/assert-is-between-array' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
+import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
+import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@esm/index.mjs';
 
 // Create an array of random numbers:
 var x = filledarrayBy( 100, 'float64', randu );
@@ -166,6 +153,10 @@ var x = filledarrayBy( 100, 'float64', randu );
 // Check whether every element resides within the interval [0.01, 0.99]:
 var bool = isBetweenArray( x, 0.01, 0.99 );
 console.log( bool );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -195,7 +186,7 @@ console.log( bool );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -260,7 +251,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-between]: https://github.com/stdlib-js/assert-is-between
+[@stdlib/assert/is-between]: https://github.com/stdlib-js/assert-is-between/tree/esm
 
 <!-- </related-links> -->
 
