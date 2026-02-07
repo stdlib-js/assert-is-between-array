@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-between-array/tags). For example,
+
+```javascript
 import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@v0.2.3-deno/mod.js';
 ```
 
@@ -140,7 +145,7 @@ bool = isBetweenArray( arr, 3, 5, 'closed', 'open' );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
-import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@v0.2.3-deno/mod.js';
+import isBetweenArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between-array@deno/mod.js';
 
 // Create an array of random numbers:
 var x = filledarrayBy( 100, 'float64', randu );
